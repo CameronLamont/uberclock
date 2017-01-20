@@ -1,0 +1,15 @@
+<div ng-app="uberclock" ng-controller="BaseCtrl">
+  <h1>Hello World</h1>
+  <ul>
+    <li ng-repeat="clock in clocks">
+      <span>{{clock}}</span>
+      <button ng-if="!clock.enabled" ng-click="enableClock(clock.id)">enable</button> 
+      <button ng-if="clock.enabled" ng-click="disableClock(clock.id)">disable</button>
+    </li>
+  </ul>
+</div>
+
+<script>
+
+
+</script>
